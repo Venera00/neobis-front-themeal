@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "www.themealdb.com/api/json/v1/1/",
+  baseURL: "https://www.themealdb.com/api/json/v1/1/",
   headers: {
     "Content-Type": "application.json",
   },
