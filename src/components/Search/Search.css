@@ -1,0 +1,11 @@
+.search__title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
