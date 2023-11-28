@@ -31,7 +31,7 @@ const Search = () => {
         </button>
       </form>
       <div className="search-result">
-        {searchResult === null
+        {searchResult.length === null
           ? "No result"
           : searchResult.map((meal) => (
               <Link to={`/meal/${meal.idMeal}`} className="meal-details__link">
