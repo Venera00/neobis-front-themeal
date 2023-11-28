@@ -34,7 +34,7 @@ const Search = () => {
         {searchResult.length === null
           ? "No result"
           : searchResult.map((meal) => (
-              <Link to={`/meal/${meal.idMeal}`} className="meal-details__link">
+              <Link to={`/${meal.idMeal}`} className="meal-details__link">
                 <div key={meal.idMeal} className="meal-item">
                   <img
                     src={meal.strMealThumb}

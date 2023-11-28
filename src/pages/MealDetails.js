@@ -16,7 +16,7 @@ const MealDetails = () => {
   }, [id]);
 
   return (
-    <div>
+    <>
       <div className="meal-header">
         <p className="random-meal__title">{mealDetails.strMeal}</p>
         <p className="random-meal__category">
@@ -48,7 +48,7 @@ const MealDetails = () => {
           Watch on Youtube
         </a>
       </div>
-    </div>
+    </>
   );
 };
 
