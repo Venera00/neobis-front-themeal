@@ -8,4 +8,55 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+}
+
+.search-input {
+  width: 20rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem 0 0 1rem;
+  padding-left: 0.5rem;
+  background-color: #d0d4ca;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.search-btn {
+  width: 8rem;
+  height: 3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #d49726;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.search-result {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+}
+
+.meal-details__link {
+  text-decoration: none;
+  color: black;
+}
+
+.meal-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meal-img {
+  width: 70%;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  margin-bottom: 0.5rem;
 }

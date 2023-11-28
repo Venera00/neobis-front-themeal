@@ -26,7 +26,7 @@ const Search = () => {
           placeholder="Find your meal"
           onChange={(e) => setSearchItem(e.target.value)}
         />
-        <button type="submit" className="search__btn">
+        <button type="submit" className="search-btn">
           Search
         </button>
       </form>
@@ -34,8 +34,8 @@ const Search = () => {
         {searchResult === null
           ? "No result"
           : searchResult.map((meal) => (
-              <div key={meal.idMeal} className="meal-item">
-                <Link to={`/meal/${meal.idMeal}`}>
+              <Link to={`/meal/${meal.idMeal}`} className="meal-details__link">
+                <div key={meal.idMeal} className="meal-item">
                   <img
                     src={meal.strMealThumb}
                     alt={meal.strMeal}
@@ -47,8 +47,8 @@ const Search = () => {
                       {meal.strCategory} | {meal.strArea}
                     </p>
                   </div>
-                </Link>
-              </div>
+                </div>
+              </Link>
             ))}
       </div>
     </div>
