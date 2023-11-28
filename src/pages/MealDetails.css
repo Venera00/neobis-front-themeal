@@ -1,0 +1,50 @@
+.meal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.random-meal__title {
+  font-size: 1.7rem;
+}
+
+.random-meal__category {
+  padding-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.detail-img {
+  width: 40%;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.meal-info {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.instructions-title {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+.instructions-text {
+  padding-bottom: 2rem;
+}
+
+.youtube-btn {
+  display: block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 3rem;
+  background-color: red;
+  color: #fff;
+  font-size: 1.3rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+}

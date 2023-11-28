@@ -18,15 +18,12 @@ const MealDetails = () => {
   return (
     <>
       <div className="meal-header">
-        <p className="random-meal__title">{mealDetails.strMeal}</p>
-        <p className="random-meal__category">
-          {mealDetails.strCategory} | {mealDetails.strArea}
-        </p>
-        <img src={mealDetails.strMealThumb} alt={mealDetails.strMeal} />
-      </div>
+        <div>
+          <p className="random-meal__title">{mealDetails.strMeal}</p>
+          <p className="random-meal__category">
+            {mealDetails.strCategory} | {mealDetails.strArea}
+          </p>
 
-      <div className="meal-info">
-        <div className="ingredients">
           <h3 className="ingredients-title">Ingredients</h3>
           <ul>
             {Object.keys(mealDetails)
@@ -38,8 +35,16 @@ const MealDetails = () => {
               ))}
           </ul>
         </div>
+        <img
+          src={mealDetails.strMealThumb}
+          alt={mealDetails.strMeal}
+          className="detail-img"
+        />
+      </div>
+
+      <div className="meal-info">
         <h3 className="instructions-title">Instructions</h3>
-        <p>{mealDetails.strInstructions}</p>
+        <p className="instructions-text">{mealDetails.strInstructions}</p>
         <a
           href={mealDetails.strYoutube}
           target="_blank"
